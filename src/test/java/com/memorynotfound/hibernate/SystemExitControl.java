@@ -11,7 +11,7 @@ class SystemExitControl {
         final SecurityManager securityManager = new SecurityManager() {
             @Override
             public void checkPermission(Permission permission) {
-                if (permission.getName().contains("exitVM")) {
+                if (permission.getName().contains("exitVM.0")) {
                     throw new ExitTrappedException();
                 }
             }
