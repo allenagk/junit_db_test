@@ -15,6 +15,8 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class JPAHibernateTest {
 
@@ -34,7 +36,7 @@ public class JPAHibernateTest {
             @Override
             public void execute(Connection connection) throws SQLException {
                 try {
-                    File script = new File(getClass().getResource("/data.sql").getFile());
+                    File script = new File(getClass().getResource("/create.sql").getFile());
                     RunScript.execute(connection, new FileReader(script));
                 } catch (FileNotFoundException e) {
                     throw new RuntimeException("could not initialize with script");

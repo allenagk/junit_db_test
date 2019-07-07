@@ -4,12 +4,21 @@
                  xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence/orm
                                      http://xmlns.jcp.org/xml/ns/persistence/orm_2_0.xsd" version="2.1">
     <!-- entity mapping -->
-    <entity class="com.memorynotfound.hibernate.Book">
+    <entity class="com.memorynotfound.hibernate.Message">
         <attributes>
-            <id name="id"/>
+            <id name="msg_id"/>
         </attributes>
         <attributes>
-            <basic name="title"/>
+            <basic name="insurer_code"/>
+        </attributes>
+        <attributes>
+            <basic name="receive_date"/>
+        </attributes>
+        <attributes>
+            <basic name="data1"/>
+        </attributes>
+        <attributes>
+            <basic name="data2"/>
         </attributes>
     </entity>
 
