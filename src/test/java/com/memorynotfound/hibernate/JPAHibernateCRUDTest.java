@@ -7,7 +7,7 @@ import static org.junit.Assert.assertEquals;
 
 public class JPAHibernateCRUDTest extends JPAHibernateTest {
 
-    @Test
+    /*@Test
     public void testGetObjectById_success() {
         Book book = em.find(Book.class, 1);
         assertNotNull(book);
@@ -42,6 +42,6 @@ public class JPAHibernateCRUDTest extends JPAHibernateTest {
         List<Book> books = em.createNamedQuery("Book.getAll", Book.class).getResultList();
 
         assertEquals(0, books.size());
-    }
+    }*/
 
 }
